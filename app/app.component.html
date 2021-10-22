@@ -1,0 +1,43 @@
+<h1 style="color:black;">Template Driven Forms</h1>
+<label for="firstname">First Name:</label>
+<input type="text" [(ngModel)]="firstName">
+<h1 style="text-align:center;"> {{ firstName }}</h1>
+
+<label for="myname">Last Name:</label>
+<input type="text" [(ngModel)]="lastName">
+<h1 style="text-align:center;"> {{ lastName }}</h1>
+
+<label for="myname">Gender:</label>
+<input type="text" [(ngModel)]="gender">
+<h1 style="text-align:center;"> {{ gender }}</h1>
+
+<label for="myname">Address:</label>
+<input type="text" [(ngModel)]="address">
+<h1 style="text-align:center;"> {{ address }}</h1>
+
+<label for="myname">Password:</label>
+<input type="text" [(ngModel)]="password">
+<h1 style="text-align:center;"> {{ password }}</h1>
+
+<h1 style="color:black;">Reactive Forms Job</h1> 
+
+<label for="name">Name:</label>
+<input type="text" [formControl]="Name">
+<h1 style="text-align:center;">{{ Name.value}}</h1>
+
+<label for="lastname">Last Name:</label>
+<input type="text" [formControl]="Last">
+<h1 style="text-align:center;">{{ Last.value}}</h1>
+
+<label for="ID number">ID number:</label>
+<input type="text" [formControl]="id">
+<h1 style="text-align:center;">{{ id.value}}</h1>
+
+<label for="lastname">Last Name:</label>
+<input type="text" [formControl]="Last">
+<h1 style="text-align:center;">{{ Last.value}}</h1>
+
+<label for="Company">Company Name:</label>
+<input type="text" [formControl]="Company">
+<h1 style="text-align:center;">{{ Company.value}}</h1>
+<router-outlet></router-outlet>
